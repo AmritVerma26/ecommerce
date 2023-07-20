@@ -116,9 +116,13 @@ body {
 }
 /* for navbar in responsive to hide buttons */
  #mobile {
-    display: inline;
+    display: none;
     align-items: center;
-} 
+ } 
+/* to remove the cart symbol from big device */
+#close {
+    display: none;
+}
 
 
 /* Home Page */
@@ -230,6 +234,7 @@ body {
     transition: 0.2s ease; 
     position: relative; /*for cart symbol to apprear within the chid as it is parent */
 } 
+
 #product1 .prod:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
 }
@@ -509,6 +514,9 @@ footer .copyright {
 
 /* making responsive for tabs */
 @media(max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
     #navbar {
         display: flex;
         flex-direction: column;
@@ -532,11 +540,11 @@ footer .copyright {
     #navbar li {
         margin-bottom: 25px;
     }
-    
+
     #mobile {
-    display: flex;
-    align-items: center;
-    }
+        display: flex;
+        align-items: center;
+     } 
 
     #mobile i {
     color: #1a1a1a;
@@ -545,6 +553,7 @@ footer .copyright {
     }
 
     #close {
+        display: initial;
     position: absolute;
     top: 30px;
     left: 30px;
@@ -556,4 +565,98 @@ footer .copyright {
         display: none;
     }
 
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%; 
+    }
+    #feature {
+        justify-content: center;
+    }
+    #feature .feature-box {
+        margin: 15px 15px;
+    }
+    #product1 .pro-container {
+        justify-content: center;
+    }
+     #product1 .prod {
+        margin: 15px;
+    }
+    #banner {
+        height: 20vh;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #banner3 {
+        padding: 0 40px;
+    }
+    #banner3 .banner-box {
+        width: 28%;
+    }
+    #newsletter .form {
+        width: 70%;
+    }
+}
+/* for small screens or mobile devices */
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px 20px;
+    }
+
+    
+    #header {
+        padding: 10px 30px;  
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+    #hero {
+        padding: 0px 20px;
+        background-position: 55%;
+    }
+    #feature {
+        justify-content: space-between;
+    }
+
+    #feature .feature-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #product1 .prod {
+        width: 100%;
+    }
+    #banner {
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        margin-top: 20px;
+    }
+    #banner3 {
+        padding: 0 20px;
+    }
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    #newsletter {
+        padding: 40px 20px;
+    }
+    #newsletter .form {
+        width: 100%;
+    }
+    footer .copyright {
+        text-align: start;
+    }
+    
+
+    
 }
