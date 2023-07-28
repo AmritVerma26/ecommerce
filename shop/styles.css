@@ -511,6 +511,7 @@ footer .copyright {
     width: 100%;
     text-align: center;
 }
+
 /* SHop-page */
 #page-header {
     background-image: url(img/banner/b1.jpg);
@@ -597,6 +598,21 @@ footer .copyright {
     font-size: xx-small;
     line-height: 5px;
 }
+
+/* Blog Page */
+#page-header.blog-header {
+    background-image: url("img/banner/b19.jpg");
+}
+
+#blog {
+    padding: 150px 150px 0 150px;
+}
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
 
 
 /* making responsive for tabs */
@@ -686,6 +702,9 @@ footer .copyright {
         width: 70%;
     }
 }
+
+
+
 /* for small screens or mobile devices */
 @media (max-width: 477px) {
     .section-p1 {
@@ -757,3 +776,5 @@ footer .copyright {
         width: 100%;
     }
 }
+
+
