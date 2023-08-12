@@ -829,7 +829,7 @@ footer .copyright {
         text-align: start;
     }
 
-    /* Single Product */
+ /* Single Product */
     #prodetails {
         display: flex;
         flex-direction: column;
@@ -842,7 +842,7 @@ footer .copyright {
         width: 100%;
     }
 
-    /*Blog Page */
+/*Blog Page */
     #blog {
         padding: 50px 20px 0 20px;
     }
@@ -859,8 +859,20 @@ footer .copyright {
     #blog .blog-details {
         width: 100%;
     }
-
-
+/* about page */
+    #about-head {
+        flex-direction: column; 
+    }
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about-head div {
+        padding-left: 0px;
+    }
+    #about-app .video {
+        width: 100%;
+    }
 
 
 }
